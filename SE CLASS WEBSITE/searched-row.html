@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="SE.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  </head>
+
+  <body>
+    <div>
+        <h1>STUDENT LIST</h1>
+        <h2>SOFTWARE ENGINEERING
+        3RD YEAR-MEKELLE UNIVERSTY</h2>
+   </div>
+    
+        <div class="menu">
+            <div class="menu-item">
+            <a href="Home.html" class="active"><i class='bx bxs-home'></i>Home</a>
+            </div>
+            <div  class="menu-item">
+            <a href="Gallery.html"><i class='bx bx-images'></i>Gallery</a>
+            </div>
+            <div class="menu-item">
+            <a href="Contact.html"><i class='bx bxs-contact'></i>Contact</a>
+             </div>
+            <div class="menu-item">
+            <a href="List.html"><i class='bx bx-list-ul'></i>List</a>
+             </div>
+        </div>
+      <div class="searchcontainer">
+        <div class="searchstudent">
+            <input type="text" id="search" name="search" placeholder="search students...">
+        </div>
+        <button onclick="searchStudentByName(document.getElementById('search').value)" class="searchicon"><i class='bx bx-search'></i></button>
+      </div>
+    <div class="list">
+      <table>
+      <tr>
+         <th onclick="sortStudents('no')">NO<i class="fa-solid fa-sort"></i></th>
+        <th onclick="sortStudents('name')">NAME<i class="fa-solid fa-sort"></i></th>
+        <th onclick="sortStudents('gender')">GENDER<i class="fa-solid fa-sort"></i></th>
+        <th onclick="sortStudents('role')">ROLE<i class="fa-solid fa-sort"></i></th>
+        <th>PIC</th>
+      </tr>
+       
+      </table>
+    </div>
+    <div class="footer">
+      <div  class="contactfollow">
+        <div>
+          <h2>Contact Us</h2>
+          <div class="icon"><i class='bx bxl-telegram'></i>t.me/meri_embaye</div>
+        </div>
+        <div >
+          <h2> Follow Us</h2>
+          <div class="icon"><i class='bx bxl-facebook' ></i><i class='bx bxl-instagram' ></i><i class='bx bxl-telegram'></i></div>
+        </div>
+      </div>
+      <div class="foot">
+        &copy 2024 Software Engineering 3rd year - Mekelle Uniiversity
+      </div>
+    </div>
+    <script src="sort.js"></script>
+    <body>
+</html> 

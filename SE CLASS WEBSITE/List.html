@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"  />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  </head>
+
+  <body>
+    <div>
+        <h1>STUDENT LIST</h1>
+        <h2>SOFTWARE ENGINEERING
+        3RD YEAR-MEKELLE UNIVERSTY</h2>
+   </div>
+    
+        <div class="menu">
+            <div class="menu-item">
+            <a href="Home.html" ><i class='bx bxs-home'></i>Home</a>
+            </div>
+            <div  class="menu-item">
+            <a href="Gallery.html"><i class='bx bx-images'></i>Gallery</a>
+            </div>
+            <div class="menu-item">
+            <a href="Contact.html"><i class='bx bxs-contact'></i>Contact</a>
+             </div>
+            <div class="menu-item">
+            <a href="List.html" class="active"><i class='bx bx-list-ul'></i>List</a>
+             </div>
+        </div>
+      <div class="searchcontainer">
+        <div class="searchstudent" >
+            <input type="text" id="search" name="search" placeholder="search students...">
+        </div>
+        <button onclick="searchStudentByName(document.getElementById('search').value)" class="searchicon"><i class='bx bx-search'></i></button>
+      </div>
+    <div class="list">
+      <table>
+      <tr>
+         <th onclick="sortStudents('no')">NO<i class="fa-solid fa-sort"></i></th>
+        <th onclick="sortStudents('name')">NAME<i class="fa-solid fa-sort"></i></th>
+        <th onclick="sortStudents('gender')">GENDER<i class="fa-solid fa-sort"></i></th>
+        <th onclick="sortStudents('role')">ROLE<i class="fa-solid fa-sort"></i></th>
+        <th>PIC</th>
+      </tr>
+       <tr>
+        <td>1</td>
+        <td>MERON EMBAYE</td>
+        <td>Female</td>
+        <td>Web Developer</td>
+        <td><img src="merri.jpg" alt="meron embaye"></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Daniel Gidey</td>
+        <td>Male</td>
+        <td>Web Developer</td>
+       <td><img src="" alt="daniel"></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Hluf Gebremeskel</td>
+        <td>Male</td>
+        <td>Web Developer</td>
+        <td><img src="" alt="hluf"></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Mesele Shushay</td>
+        <td>Male</td>
+        <td>Web Developer</td>
+        <td><img src="" alt="mesele"></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Hlna Gebrehiwot</td>
+        <td>Female</td>
+        <td>Web Developer</td>
+        <td><img src="" alt="hlna"></td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Rahel Sehale</td>
+        <td>Female</td>
+        <td>Web Developer</td>
+        <td><img src="" alt="rahel"></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Gedion Aschalew</td>
+        <td>Male</td>
+        <td>Web Developer</td>
+        <td><img src="" alt="gedion"></td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Mikiele Getachew</td>
+        <td>Male</td>
+        <td>Web Developer</td>
+       <td><img src="" alt="Mikiele"></td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Eden Kidane</td>
+        <td>Female</td>
+        <td>Web Developer</td>
+       <td><img src="" alt="eden"></td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>leek Gebreegziabher</td>
+        <td>Male</td>
+        <td>Mobile App Developer</td>
+       <td><img src="" alt="leek"></td>
+      </tr>
+
+      </table>
+    </div>
+    <div class="footer">
+      <div  class="contactfollow">
+        <div>
+          <h2>Contact Us</h2>
+          <div class="icon"><i class='bx bxl-telegram'></i>t.me/meri_embaye</div>
+        </div>
+        <div >
+          <h2> Follow Us</h2>
+          <div class="icon"><i class='bx bxl-facebook' ></i><i class='bx bxl-instagram' ></i><i class='bx bxl-telegram'></i></div>
+        </div>
+      </div>
+      <div class="foot">
+        &copy 2024 Software Engineering 3rd year - Mekelle Uniiversity
+      </div>
+    </div>
+    <script src="src.js"></script>
+    <body>
+</html> 
